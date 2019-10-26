@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <div class="main-container">
+        <p id="welcome_mess">Welcome to my criss cross game!</p>
+        <table>
+            <tr>
+                <th class="el" id="A1" onclick="action('A1')"></th>
+                <th class="el" id="B1" onclick="action('B1')"></th>
+                <th class="el" id="C1" onclick="action('C1')"></th>
+            </tr>
+            <tr>
+                <th class="el" id="A2" onclick="action('A2')"></th>
+                <th class="el" id="B2" onclick="action('B2')"></th>
+                <th class="el" id="C2" onclick="action('C2')"></th>
+            </tr>
+            <tr>
+                <th class="el"  id="A3" onclick="action('A3')"></th>
+                <th class="el" id="B3" onclick="action('B3')"></th>
+                <th class="el" id="C3" onclick="action('C3')"></th>
+            </tr>
+        </table>
+        <div id="info">
+            <h1>
+                Player1 - X
+                <br>
+                Player2 - O
+            </h1>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <h1>! Congratulations !</h1>
+              <h1 id="win"></h1>
+              <h1>you won!</h1>
+              <h2>Close the window to start over</h2>
+            </div>
+        </div>
+</body>
+    <script src="script.js"></script>
+</html>
